@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Food Waste Management Platform</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Restaurant Food Waste Management Platform</h1>
+        <p>Track, understand and manage food waste effectively.</p>
+    </header>
+
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#problem">Problem</a> |
+        <a href="#objective">Objective</a> |
+        <a href="#record">Add Waste Record</a> |
+        <a href="#records">Waste Records</a> |
+        <a href="#dashboard">Dashboard</a>
+    </nav>
+
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+
+            <h2>Welcome to Food Waste Management</h2>
+
+            <p>
+                Food waste is a common problem in restaurants.
+                Food may be wasted because of overproduction,
+                spoilage, incorrect preparation and unsold items.
+            </p>
+
+            <p>
+                This platform helps restaurants record their food waste,
+                understand the reasons behind it and identify recurring
+                sources of waste.
+            </p>
+
+            <h3>What This Platform Helps With</h3>
+
+            <ul>
+                <li>Record food waste</li>
+                <li>Organize waste by food category</li>
+                <li>Identify reasons for waste</li>
+                <li>Track quantity and date</li>
+                <li>Monitor different departments</li>
+                <li>Identify recurring waste patterns</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Problem Statement -->
+        <section id="problem">
+
+            <h2>Problem Statement</h2>
+
+            <p>
+                Restaurants discard food due to overproduction,
+                spoilage, incorrect preparation and unsold items.
+                Managers often lack visibility into where waste
+                is occurring.
+            </p>
+
+            <h3>Common Causes of Food Waste</h3>
+
+            <ol>
+                <li>Overproduction</li>
+                <li>Food Spoilage</li>
+                <li>Incorrect Preparation</li>
+                <li>Unsold Food</li>
+            </ol>
+
+        </section>
+
+
+        <!-- Project Objective -->
+        <section id="objective">
+
+            <h2>Project Objective</h2>
+
+            <p>
+                The objective of this platform is to develop a system
+                that records food waste by category and identifies
+                recurring sources of waste.
+            </p>
+
+            <h3>Main Goals</h3>
+
+            <ul>
+                <li>Record food waste systematically</li>
+                <li>Understand major waste sources</li>
+                <li>Track waste quantity</li>
+                <li>Identify repeated waste patterns</li>
+                <li>Support better waste management decisions</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Add Waste Record -->
+        <section id="record">
+
+            <h2>Add Waste Record</h2>
+
+            <p>
+                Enter the details of the food waste below.
+            </p>
+
+            <form>
+
+                <!-- Food Item -->
+                <label for="food">
+                    Food Item:
+                </label>
+                <input type="text" id="food" name="food"
+                       placeholder="Enter food item">
+                <br><br>
+
+
+                <!-- Food Category -->
+                <label for="category">
+                    Food Category:
+                </label>
+
+                <select id="category" name="category">
+
+                    <option value="">
+                        Select Category
+                    </option>
+
+                    <option value="vegetables">
+                        Vegetables
+                    </option>
+
+                    <option value="rice">
+                        Rice
+                    </option>
+
+                    <option value="bread">
+                        Bread
+                    </option>
+
+                    <option value="dairy">
+                        Dairy
+                    </option>
+
+                    <option value="meat">
+                        Meat
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+                <br><br>
+
+
+                <!-- Reason -->
+                <label for="reason">
+                    Reason for Waste:
+                </label>
+
+                <select id="reason" name="reason">
+
+                    <option value="">
+                        Select Reason
+                    </option>
+
+                    <option value="overproduction">
+                        Overproduction
+                    </option>
+
+                    <option value="spoilage">
+                        Spoilage
+                    </option>
+
+                    <option value="incorrect-preparation">
+                        Incorrect Preparation
+                    </option>
+
+                    <option value="unsold">
+                        Unsold Food
+                    </option>
+
+                </select>
+
+                <br><br>
+
+
+                <!-- Quantity -->
+                <label for="quantity">
+                    Quantity:
+                </label>
+
+                <input type="number"
+                       id="quantity"
+                       name="quantity"
+                       placeholder="Enter quantity">
+
+                <select id="unit" name="unit">
+                    <option value="kg">Kg</option>
+                    <option value="litre">Litre</option>
+                    <option value="pieces">Pieces</option>
+                </select>
+
+                <br><br>
+
+
+                <!-- Date -->
+                <label for="date">
+                    Date:
+                </label>
+
+                <input type="date"
+                       id="date"
+                       name="date">
+
+                <br><br>
+
+
+                <!-- Department -->
+                <label for="department">
+                    Department:
+                </label>
+
+                <select id="department" name="department">
+
+                    <option value="">
+                        Select Department
+                    </option>
+
+                    <option value="kitchen">
+                        Kitchen
+                    </option>
+
+                    <option value="bakery">
+                        Bakery
+                    </option>
+
+                    <option value="storage">
+                        Storage
+                    </option>
+
+                    <option value="service">
+                        Service
+                    </option>
+
+                </select>
+
+                <br><br>
+
+
+                <!-- Improvement Observation -->
+                <label for="observation">
+                    Improvement Observation:
+                </label>
+
+                <br>
+
+                <textarea id="observation"
+                          name="observation"
+                          rows="5"
+                          cols="45"
+                          placeholder="Write your observation here..."></textarea>
+
+                <br><br>
+
+
+                <!-- Submit Button -->
+                <button type="submit">
+                    Add Waste Record
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Waste Records -->
+        <section id="records">
+
+            <h2>Waste Records</h2>
+
+            <p>
+                Example records of food waste are shown below.
+            </p>
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th>Food Item</th>
+                        <th>Category</th>
+                        <th>Reason</th>
+                        <th>Quantity</th>
+                        <th>Date</th>
+                        <th>Department</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>Rice</td>
+                        <td>Rice</td>
+                        <td>Overproduction</td>
+                        <td>5 Kg</td>
+                        <td>20-10-2026</td>
+                        <td>Kitchen</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Milk</td>
+                        <td>Dairy</td>
+                        <td>Spoilage</td>
+                        <td>2 Litre</td>
+                        <td>21-10-2026</td>
+                        <td>Storage</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Bread</td>
+                        <td>Bread</td>
+                        <td>Unsold Food</td>
+                        <td>10 Pieces</td>
+                        <td>22-10-2026</td>
+                        <td>Service</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Vegetables</td>
+                        <td>Vegetables</td>
+                        <td>Spoilage</td>
+                        <td>3 Kg</td>
+                        <td>23-10-2026</td>
+                        <td>Kitchen</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Trend Dashboard -->
+        <section id="dashboard">
+
+            <h2>Waste Trend Dashboard</h2>
+
+            <p>
+                The dashboard helps identify recurring sources
+                and patterns of food waste.
+            </p>
+
+
+            <h3>Waste Categories</h3>
+
+            <ul>
+                <li>Vegetables</li>
+                <li>Rice</li>
+                <li>Bread</li>
+                <li>Dairy</li>
+                <li>Meat</li>
+                <li>Other</li>
+            </ul>
+
+
+            <h3>Major Waste Sources</h3>
+
+            <ol>
+                <li>Overproduction</li>
+                <li>Spoilage</li>
+                <li>Incorrect Preparation</li>
+                <li>Unsold Food</li>
+            </ol>
+
+
+            <h3>Improvement Observations</h3>
+
+            <ul>
+                <li>
+                    Monitor food preparation according to demand.
+                </li>
+
+                <li>
+                    Store food properly to reduce spoilage.
+                </li>
+
+                <li>
+                    Track unsold food regularly.
+                </li>
+
+                <li>
+                    Review repeated waste records.
+                </li>
+
+                <li>
+                    Use waste data to improve future planning.
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <hr>
+
+        <p>
+            &copy; 2026 Restaurant Food Waste Management Platform
+        </p>
+
+        <p>
+            Organization Target: Other
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
