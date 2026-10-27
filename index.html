@@ -8,6 +8,313 @@
 
     <title>Restaurant Food Waste Management Platform</title>
 </head>
+    <style>
+:root {
+    --ink: black;
+    --yellow: #F2FF3D;
+    --pink: #FF78B8;
+    --purple: #B9A4FF;
+    --orange: #FFAD70;
+    --paper: #FFFDF5;
+    --line: #202020;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background-color: var(--paper);
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background: var(--yellow);
+    color: var(--ink);
+    text-align: center;
+    padding: 65px 20px;
+    border-bottom: 3px solid var(--ink);
+}
+
+header h1 {
+    max-width: 850px;
+    margin: 0 auto 16px;
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+header p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* Navigation */
+nav {
+    background: var(--ink);
+    padding: 13px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 9px 13px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background: var(--yellow);
+    color: var(--ink);
+}
+
+/* Main content */
+main {
+    max-width: 1150px;
+    margin: 38px auto;
+    padding: 0 22px;
+}
+
+section {
+    background: white;
+    padding: clamp(22px, 4vw, 36px);
+    margin-bottom: 28px;
+    border: 2px solid var(--ink);
+    border-radius: 14px;
+    box-shadow: 5px 5px 0 var(--ink);
+    scroll-margin-top: 85px;
+}
+
+section:nth-of-type(3n + 1) {
+    background: #FFFDF5;
+}
+
+section:nth-of-type(3n + 2) {
+    background: #FFF0F7;
+}
+
+section:nth-of-type(3n) {
+    background: #F1EDFF;
+}
+
+section h2 {
+    display: table;
+    max-width: 100%;
+    color: var(--ink);
+    font-size: clamp(22px, 3vw, 30px);
+    line-height: 1.4;
+    margin-top: 0;
+    padding: 0 7px;
+    background: 
+    );
+}
+
+h3 {
+    font-size: 19px;
+}
+
+/* Highlighted text */
+mark {
+    background: var(--yellow);
+    color: var(--ink);
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+strong {
+    text-decoration: underline;
+    text-decoration-color: var(--pink);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+
+/* Lists */
+li {
+    margin-bottom: 9px;
+}
+
+/* Form fields */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 6px;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 12px;
+    border: 2px solid var(--ink);
+    border-radius: 8px;
+    background: white;
+    color: var(--ink);
+    font: inherit;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--yellow);
+    outline-offset: 2px;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+    display: inline-block;
+    width: auto;
+    background: var(--pink);
+    color: var(--ink);
+    border: 2px solid var(--ink);
+    border-radius: 8px;
+    padding: 12px 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 var(--ink);
+    transition: 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: var(--yellow);
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--ink);
+}
+
+/* Records table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    background: white;
+    border: 2px solid var(--ink);
+}
+
+th {
+    background: var(--yellow);
+    color: var(--ink);
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 14px;
+    border: 1px solid var(--ink);
+}
+
+tbody tr:nth-child(even) {
+    background: #FFF0F7;
+}
+
+tbody tr:hover {
+    background: #F1EDFF;
+}
+
+/* Dashboard cards */
+.card,
+.dashboard-card {
+    background: var(--yellow);
+    border: 2px solid var(--ink);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 12px 0;
+    box-shadow: 4px 4px 0 var(--ink);
+    transition: 0.2s;
+}
+
+.card:nth-child(even),
+.dashboard-card:nth-child(even) {
+    background: var(--pink);
+}
+
+.card:hover,
+.dashboard-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: var(--ink);
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+    margin-top: 45px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 700px) {
+    nav {
+        position: static;
+        gap: 3px;
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 7px 9px;
+        font-size: 12px;
+    }
+
+    header {
+        padding: 45px 18px;
+    }
+
+    main {
+        padding: 0 14px;
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 20px 16px;
+        box-shadow: 3px 3px 0 var(--ink);
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+</style>
+<body>
+
+    <!-- Header -->
+    <header>
+    <h2>Let's Reduce <mark>Food Waste!</mark></h2>
+<p>Every meal matters. <br/> <mark>Track it. Reduce it. Save it.</mark></p>
 
 <body>
 
