@@ -1,300 +1,153 @@
-<style>
-:root {
-    --ink: black;
-    --yellow: #b5d834;
-    --pink: #FF78B8;
-    --purple: #B9A4FF;
-    --orange: #FFAD70;
-    --paper: #FFFDF5;
-    --line: #202020;
-}
-
-* {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+ <style>
+/* Basic CSS Styling */
 
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f7f2;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--ink);
-    background-color: var(--paper);
-    line-height: 1.7;
+    padding: 0;
+    color: #333;
 }
 
 /* Header */
 header {
-    background: var(--yellow);
-    color: var(--ink);
+    background-color: #2e7d32;
+    color: white;
     text-align: center;
-    padding: 65px 20px;
-    border-bottom: 3px solid var(--ink);
+    padding: 25px;
 }
 
-header h1 {
-    max-width: 850px;
-    margin: 0 auto 16px;
-    font-size: clamp(32px, 5vw, 54px);
-    line-height: 1.12;
-    letter-spacing: -1.5px;
+header h2 {
+    font-size: 30px;
 }
 
 header p {
-    max-width: 650px;
-    margin: auto;
     font-size: 17px;
 }
 
-/* Navigation */
+/* Navigation Bar */
 nav {
-    background: var(--ink);
-    padding: 13px 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    background-color: #1b5e20;
+    text-align: center;
+    padding: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 13px;
+    margin: 10px;
     font-weight: bold;
-    padding: 9px 13px;
-    border-radius: 5px;
-    transition: 0.2s;
 }
 
 nav a:hover {
-    background: var(--yellow);
-    color: var(--ink);
+    color: yellow;
+    text-decoration: underline;
 }
 
-/* Main content */
-main {
-    max-width: 1150px;
-    margin: 38px auto;
-    padding: 0 22px;
-}
-
+/* Main Sections */
 section {
-    background: white;
-    padding: clamp(22px, 4vw, 36px);
-    margin-bottom: 28px;
-    border: 2px solid var(--ink);
-    border-radius: 14px;
-    box-shadow: 5px 5px 0 var(--ink);
-    scroll-margin-top: 85px;
+    background-color: white;
+    margin: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-section:nth-of-type(3n + 1) {
-    background: #FFFDF5;
-}
-
-section:nth-of-type(3n + 2) {
-    background: #FFF0F7;
-}
-
-section:nth-of-type(3n) {
-    background: #F1EDFF;
-}
-
-section h2 {
-    display: table;
-    max-width: 100%;
-    color: var(--ink);
-    font-size: clamp(22px, 3vw, 30px);
-    line-height: 1.4;
-    margin-top: 0;
-    padding: 0 7px;
-    background: var(--yellow);
-    );
+/* Headings */
+h2 {
+    color: #2e7d32;
 }
 
 h3 {
-    font-size: 19px;
+    color: #388e3c;
 }
 
-/* Highlighted text */
-mark {
-    background: var(--yellow);
-    color: var(--ink);
-    padding: 2px 5px;
-    font-weight: bold;
-}
-
-strong {
-    text-decoration: underline;
-    text-decoration-color: var(--pink);
-    text-decoration-thickness: 3px;
-    text-underline-offset: 3px;
+/* Paragraphs */
+p {
+    line-height: 1.6;
 }
 
 /* Lists */
-li {
-    margin-bottom: 9px;
+ul, ol {
+    line-height: 1.8;
 }
 
-/* Form fields */
+/* Form */
+form {
+    background-color: #f9fff9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 label {
-    display: block;
     font-weight: bold;
-    margin: 15px 0 6px;
 }
 
-input,
-select,
-textarea {
-    display: block;
-    width: 100%;
-    padding: 13px 14px;
-    margin-bottom: 12px;
-    border: 2px solid var(--ink);
-    border-radius: 8px;
-    background: white;
-    color: var(--ink);
-    font: inherit;
-    font-size: 14px;
+input, select, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-    outline: 3px solid var(--yellow);
-    outline-offset: 2px;
-}
-
-textarea {
-    min-height: 110px;
-    resize: vertical;
-}
-
-/* Buttons */
-button,
-input[type="submit"] {
-    display: inline-block;
-    width: auto;
-    background: var(--pink);
-    color: var(--ink);
-    border: 2px solid var(--ink);
-    border-radius: 8px;
-    padding: 12px 22px;
-    font-weight: bold;
+/* Submit Button */
+button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 3px 3px 0 var(--ink);
-    transition: 0.2s;
 }
 
-button:hover,
-input[type="submit"]:hover {
-    background: var(--yellow);
-    transform: translate(2px, 2px);
-    box-shadow: 1px 1px 0 var(--ink);
+button:hover {
+    background-color: #1b5e20;
 }
 
-/* Records table */
+/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 18px;
-    background: white;
-    border: 2px solid var(--ink);
+    margin-top: 15px;
 }
 
 th {
-    background: var(--yellow);
-    color: var(--ink);
-    text-align: left;
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px;
 }
 
-th, td {
-    padding: 12px 14px;
-    border: 1px solid var(--ink);
+td {
+    padding: 10px;
+    text-align: center;
 }
 
-tbody tr:nth-child(even) {
-    background: #FFF0F7;
+td, th {
+    border: 1px solid #aaa;
 }
 
-tbody tr:hover {
-    background: #F1EDFF;
-}
-
-/* Dashboard cards */
-.card,
-.dashboard-card {
-    background: var(--yellow);
-    border: 2px solid var(--ink);
-    border-radius: 12px;
-    padding: 20px;
-    margin: 12px 0;
-    box-shadow: 4px 4px 0 var(--ink);
-    transition: 0.2s;
-}
-
-.card:nth-child(even),
-.dashboard-card:nth-child(even) {
-    background: var(--pink);
-}
-
-.card:hover,
-.dashboard-card:hover {
-    transform: translateY(-3px);
-}
-
-/* Images */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+tr:nth-child(even) {
+    background-color: #e8f5e9;
 }
 
 /* Footer */
 footer {
-    background: var(--ink);
+    background-color: #1b5e20;
     color: white;
     text-align: center;
-    padding: 28px 20px;
-    margin-top: 45px;
+    padding: 15px;
+    margin-top: 20px;
 }
 
-footer p {
-    margin: 5px 0;
+footer hr {
+    border: 1px solid white;
 }
 
-@media (max-width: 700px) {
-    nav {
-        position: static;
-        gap: 3px;
-        padding: 10px;
-    }
-
-    nav a {
-        padding: 7px 9px;
-        font-size: 12px;
-    }
-
-    header {
-        padding: 45px 18px;
-    }
-
-    main {
-        padding: 0 14px;
-        margin: 25px auto;
-    }
-
-    section {
-        padding: 20px 16px;
-        box-shadow: 3px 3px 0 var(--ink);
-    }
-
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-</style>
+/* Mark Tag */
+mark {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+}
+    </style>
+              
