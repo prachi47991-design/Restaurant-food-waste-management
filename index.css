@@ -1,1 +1,152 @@
+<style>
+/* Basic CSS Styling */
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f7f2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h2 {
+    font-size: 30px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1b5e20;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Main Sections */
+section {
+    background-color: white;
+    margin: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Headings */
+h2 {
+    color: #2e7d32;
+}
+
+h3 {
+    color: #388e3c;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Lists */
+ul, ol {
+    line-height: 1.8;
+}
+
+/* Form */
+form {
+    background-color: #f9fff9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+/* Submit Button */
+button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid #aaa;
+}
+
+tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+/* Footer */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer hr {
+    border: 1px solid white;
+}
+
+/* Mark Tag */
+mark {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+}
+    </style>
